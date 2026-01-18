@@ -1,57 +1,46 @@
-let js = "amazing"
-console.log(40 + 8 + 23 - 10)
 
-console.log("Varun")
-console.log(23)
+////////////////////////////////////
+// Linking a JavaScript File
+let js = "amazing";
+console.log(40 + 8 + 23 - 10);
 
-let firstName = "Varun";
+////////////////////////////////////
+// Values and Variables
+console.log("Jonas");
+console.log(23);
 
-console.log(firstName)
-console.log(firstName)
-console.log(firstName)
+let firstName = "Matilda";
+
+console.log(firstName);
+console.log(firstName);
+console.log(firstName);
 
 // Variable name conventions
-let jonas_matilda = "JM"
+let jonas_matilda = "JM";
 let $function = 27;
 
-let person = "Varun";
+let person = "jonas";
 let PI = 3.1415;
 
 let myFirstJob = "Coder";
 let myCurrentJob = "Teacher";
 
-let job1 = "Programmer";
-let job2 = "Teacher";
+let job1 = "programmer";
+let job2 = "teacher";
 
-console.log(myFirstJob)
+console.log(myFirstJob);
 
-// In JS every value is either Object or Primitive value.
-// There are 7 Primitive Data types:-
-
-// 1. Number: Floating point numbers Used for decimals and integers.
-// let age = 23;
-// 2. String: Sequence of characters Used for text.
-// let firstName = 'Jonas'; 
-// 3. Boolean: Logical type that can only be true or false Used for taking decisions 
-// let fullAge = true;
-// 4. Undefined: Value taken by a variable that is not yet defined ('empty value') 
-// let children: 
-// 5. Null: Also means 'empty value 
-// 6. Symbol (ES2015): Value that is unique and cannot be changed [Not useful for now] 
-// 7. BigInt (ES2020): Larger integers than the Number type can hold
-
-// JavaScript has dynamic typing: We do not have to manually define the data type of the value stored in a variable. Instead, data types are determined automatically
-
- 
+////////////////////////////////////
+// Data Types
 let javascriptIsFun = true;
 console.log(javascriptIsFun);
 
-console.log(typeof true);
+// console.log(typeof true);
 console.log(typeof javascriptIsFun);
-console.log(typeof 23);
-console.log(typeof 'Varun');
+// console.log(typeof 23);
+// console.log(typeof 'Jonas');
 
-javascriptIsFun = 'Yes!';
+javascriptIsFun = 'YES!';
 console.log(typeof javascriptIsFun);
 
 let year;
@@ -63,158 +52,193 @@ console.log(typeof year);
 
 console.log(typeof null);
 
-
-let age = 30;
-age = 31;
+////////////////////////////////////
+// let, const and var
+let aage = 30;
+aage = 31;
 
 const birthYear = 1991;
 // birthYear = 1990;
 // const job;
 
 var job = 'programmer';
-job = 'teacher';
+job = 'teacher'
 
-lastName = "Schmedtmann";
+lastName = 'Schmedtmann';
 console.log(lastName);
 
+////////////////////////////////////
+// Basic Operators
+// Math operators
 const now = 2037;
 const ageJonas = now - 1991;
 const ageSarah = now - 2018;
-console.log(ageJonas - ageSarah);
+console.log(ageJonas, ageSarah);
 
 console.log(ageJonas * 2, ageJonas / 10, 2 ** 3);
 // 2 ** 3 means 2 to the power of 3 = 2 * 2 * 2
 
-const firstName2 = 'Jonas';
-const lastName2 = 'Schmedtmann';
-console.log(firstName2 + lastName2);
+const firstNaame = 'Jonas';
+const lastName = 'Schmedtmann';
+console.log(firstNaame + ' ' + lastName);
 
-// Assignment Operators
-let x = 10 + 5; // 15
-x += 10; // x = x + 10 = 25
-x *= 4; // x = x * 4 = 100
-x++; // x = x + 1
-x--;
-x--;
-console.log(x);
+// Assignment operators
+let z = 10 + 5; // 15
+z += 10; // z = z + 10 = 25
+z *= 4; // z = z * 4 = 100
+z++; // z = z + 1
+z--;
+z--;
+console.log(z);
 
-// Comparison Operators
+// Comparison operators
 console.log(ageJonas > ageSarah); // >, <, >=, <=
 console.log(ageSarah >= 18);
 
 const isFullAge = ageSarah >= 18;
 
-console.log(now - 1991 > now - 2018)
+console.log(now - 1991 > now - 2018);
+
+////////////////////////////////////
+// Operator Precedence
+const noww = 2037;
+const ageJonass = noww - 1991;
+const ageSarahh = noww - 2018;
+
+console.log(noww - 1991 > noww - 2018);
+
+let x, y;
+x = y = 25 - 10 - 5; // x = y = 10, x = 10
+console.log(x, y);
+
+const averageAge = (ageJonas + ageSarah) / 2;
+console.log(ageJonas, ageSarah, averageAge);
 
 
-const now2 = 2037;
-const ageJonas2 = now - 1991;
-const ageSarah2 = now - 2018;
 
-console.log(now - 1991 > now - 2018)
+////////////////////////////////////
+// Coding Challenge #1
 
-let a, b;
-a = b = 25 - 10 - 5; // a = b = 10, a = 10
-console.log(a, b);
+/*
+Mark and John are trying to compare their BMI (Body Mass Index), which is calculated using the formula: BMI = mass / height ** 2 = mass / (height * height). (mass in kg and height in meter).
 
-const averageAge = (ageJonas2 + ageSarah2) / 2
-console.log(ageJonas2, ageSarah2, averageAge)
+1. Store Mark's and John's mass and height in variables
+2. Calculate both their BMIs using the formula (you can even implement both versions)
+3. Create a boolean variable 'markHigherBMI' containing information about whether Mark has a higher BMI than John.
 
+TEST DATA 1: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m tall.
+TEST DATA 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76 m tall.
+*/
 
 // const massMark = 78;
 // const heightMark = 1.69;
 // const massJohn = 92;
 // const heightJohn = 1.95;
 
-const massMark = 95;
-const heightMark = 1.;88
-const massJohn = 85;
-const heightJohn = 1.76;
 
-const BMIMark = massMark / heightMark ** 2;
-const BMIJohn = massJohn / (heightJohn * heightJohn);
-const markHigherBMI = BMIMark > BMIJohn;
+const massMarkk = 95;
+const heightMarkk = 1.88;
+const massJohnn = 85;
+const heightJohnn = 1.76;
 
-console.log(BMIMark, BMIJohn, markHigherBMI);
+const BMIMarkk = massMarkk / heightMarkk ** 2;
+const BMIJohnn = massJohnn / (heightJohnn * heightJohnn);
+const markHigherBMI = BMIMarkk > BMIJohnn;
 
+console.log(BMIMarkk, BMIJohnn, markHigherBMI);
 
-const firstName3 = "Varun";
-const job3 = 'Teacher';
-const birthYear3 = 1991;
-const year3 = 2037;
+////////////////////////////////////
+// Strings and Template Literals
+const firstNamee = 'Jonas';
+const job = 'teacher';
+const birthYearr = 1991;
+const yearrr = 2037;
 
-const varun = "I'm" + firstName3 + ', a ' + (year - birthYear3) + ' year old' + job + '!';
-console.log(varun);
+const jonas = "I'm " + firstNamee + ', a ' + (yearrr - birthYearr) + ' year old ' + job + '!';
+console.log(jonas);
 
-const varunNew = `I'm ${firstName3}, a ${year3 - birthYear3} year old ${job3}!`;
-console.log(varunNew)
+const jonasNew = `I'm ${firstNamee}, a ${yearrr - birthYearr} year old ${job}!`;
+console.log(jonasNew);
 
 console.log(`Just a regular string...`);
 
 console.log('String with \n\
-    multiple \n\
-    lines');
+multiple \n\
+lines');
 
 console.log(`String
-    multiple
-    lines`);
+multiple
+lines`);
 
 
-const aage = 19;
+////////////////////////////////////
+// Taking Decisions: if / else Statements
+const agee = 15;
 
-if (aage >= 18){
-    console.log("Sarah can start driving license");
-} else{
-    const yearsLeft = 18 - age;
-    console.log(`Sarah is too young. Wait another ${yearsLeft} years :)`); 
+if (agee >= 18) {
+  console.log('Sarah can start driving license 🚗');
+} else {
+  const yearsLeft = 18 - agee;
+  console.log(`Sarah is too young. Wait another ${yearsLeft} years :)`);
 }
 
-const birthYear4 = 1998;
+const birthYeear = 2012;
 
 let century;
-if(birthYear4 <= 2000) {
-    let century = 20;
+if (birthYeear <= 2000) {
+  century = 20;
 } else {
-    let century = 21;
+  century = 21;
 }
 console.log(century);
 
 
-// const massMark2 = 78;
-// const heightMark2 = 1.69;
-// const massJohn2 = 92;
-// const heightJohn2 = 1.95;
+////////////////////////////////////
+// Coding Challenge #2
 
-const massMark2 = 95;
-const heightMark2 = 1.;88
-const massJohn2 = 85;
-const heightJohn2 = 1.76;
+/*
+Use the BMI example from Challenge #1, and the code you already wrote, and improve it:
 
-const BMIMark2 = massMark2 / heightMark2 ** 2;
-const BMIJohn2 = massJohn2 / (heightJohn2 * heightJohn2);
-console.log(BMIMark2, BMIJohn2);
+1. Print a nice output to the console, saying who has the higher BMI. The message can be either "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark's!"
+2. Use a template literal to include the BMI values in the outputs. Example: "Mark's BMI (28.3) is higher than John's (23.9)!"
+*/
 
-if(BMIMark2 > BMIJohn2){
-    console.log("Mark's BMI is higher than John's!");
-} else{
-    console.log("John's BMI is higher than Mark's!");
+
+const massMark = 78;
+const heightMark = 1.69;
+const massJohn = 92;
+const heightJohn = 1.95;
+
+// const massMark = 95;
+// const heightMark = 1.88;
+// const massJohn = 85;
+// const heightJohn = 1.76;
+
+const BMIMark = massMark / heightMark ** 2;
+const BMIJohn = massJohn / (heightJohn * heightJohn);
+console.log(BMIMark, BMIJohn);
+
+if (BMIMark > BMIJohn) {
+  console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`)
+} else {
+  console.log(`John's BMI (${BMIJohn}) is higher than Marks's (${BMIMark})!`)
 }
 
-
+////////////////////////////////////
+// Type Conversion and Coercion
 
 // type conversion
 const inputYear = '1991';
-console.log(Number(inputYear));
-console.log(inputYear + 18);
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
 
-console.log(Number("Varun"));
+console.log(Number('Jonas'));
 console.log(typeof NaN);
 
 console.log(String(23), 23);
 
 // type coercion
-console.log('I am' + 23 + ' years old');
-console.log('I am' + String(23) + ' years old');
+console.log('I am ' + 23 + ' years old');
 console.log('23' - '10' - 3);
 console.log('23' / '2');
 
@@ -222,54 +246,55 @@ let n = '1' + 1; // '11'
 n = n - 1;
 console.log(n);
 
-
+////////////////////////////////////
+// Truthy and Falsy Values
 
 // 5 falsy values: 0, '', undefined, null, NaN
-
 console.log(Boolean(0));
 console.log(Boolean(undefined));
-console.log(Boolean('Varun'));
+console.log(Boolean('Jonas'));
 console.log(Boolean({}));
 console.log(Boolean(''));
 
-const money = 0;
-if(money) {
-    console.log("Don't spend it all ;)");
+const money = 100;
+if (money) {
+  console.log("Don't spend it all ;)");
 } else {
-    console.log('You should get a job!')
+  console.log('You should get a job!');
 }
-
 
 let height = 0;
-if (height){
-    console.log('YAY! Height is defined');
+if (height) {
+  console.log('YAY! Height is defined');
 } else {
-    console.log('Height is UNDEFINED')
+  console.log('Height is UNDEFINED');
 }
 
+////////////////////////////////////
+// Equality Operators: == vs. ===
+const agge = '18';
+if (agge === 18) console.log('You just became an adult :D (strict)');
 
+if (agge == 18) console.log('You just became an adult :D (loose)');
 
-const agge = 10;
-if (age === 18) console.log('You just become an adult :D (strict)');
-
-if (age == 18) console.log('You just become an adult :D (loose)');
-
-const favourite = Number(prompt("What's your favourite number!"))
+const favourite = Number(prompt("What's your favourite number?"));
 console.log(favourite);
 console.log(typeof favourite);
 
-if (favourite == 23) {
-    console.log('Cool! 23 is an amzaing number!')
-} else if(favourite === 7){
-    console.log('7 is also a cool number')
+if (favourite === 23) { // 22 === 23 -> FALSE
+  console.log('Cool! 23 is an amzaing number!')
+} else if (favourite === 7) {
+  console.log('7 is also a cool number')
+} else if (favourite === 9) {
+  console.log('9 is also a cool number')
 } else {
-    console.log('Number is not 23 or 7')
+  console.log('Number is not 23 or 7 or 9')
 }
 
-if (favourite !== 23) console.log('Why not 23?')
+if (favourite !== 23) console.log('Why not 23?');
 
-
-
+////////////////////////////////////
+// Logical Operators
 const hasDriversLicense = true; // A
 const hasGoodVision = true; // B
 
@@ -277,24 +302,23 @@ console.log(hasDriversLicense && hasGoodVision);
 console.log(hasDriversLicense || hasGoodVision);
 console.log(!hasDriversLicense);
 
-// const shouldDrive = hasDriversLicense && hasGoodVision;
-
-// if(hasDriversLicense && hasGoodVision) {
-//     console.log('Sarah is able to drive')
+// if (hasDriversLicense && hasGoodVision) {
+//   console.log('Sarah is able to drive!');
 // } else {
-//     console.log('someone else should drive...')
+//   console.log('Someone else should drive...');
 // }
 
 const isTired = false; // C
 console.log(hasDriversLicense && hasGoodVision && isTired);
 
-if(hasDriversLicense && hasGoodVision && !isTired) {
-    console.log('Sarah is able to drive')
+if (hasDriversLicense && hasGoodVision && !isTired) {
+  console.log('Sarah is able to drive!');
 } else {
-    console.log('someone else should drive...')
+  console.log('Someone else should drive...');
 }
 
 
+////////////////////////////////////
 // Coding Challenge #3
 
 /*
@@ -314,20 +338,18 @@ TEST DATA BONUS 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
 
 // const scoreDolphins = (96 + 108 + 89) / 3;
 // const scoreKoalas = (88 + 91 + 110) / 3;
-
 // console.log(scoreDolphins, scoreKoalas);
 
-// if(scoreDolphins > scoreKoalas) {
-//     console.log('Dolphins win the trophy 🏆');
-// } else if(scoreKoalas > scoreDolphins) {
-//     console.log('Koalas win the trophy 🏆');
+// if (scoreDolphins > scoreKoalas) {
+//   console.log('Dolphins win the trophy 🏆');
+// } else if (scoreKoalas > scoreDolphins) {
+//   console.log('Koalas win the trophy 🏆');
 // } else if (scoreDolphins === scoreKoalas) {
-//     console.log("Both win the trophy!")
+//   console.log('Both win the trophy!');
 // }
 
-
 // BONUS 1
-const scoreDolphins = (96 + 112 + 80) / 3;
+const scoreDolphins = (97 + 112 + 80) / 3;
 const scoreKoalas = (109 + 95 + 50) / 3;
 console.log(scoreDolphins, scoreKoalas);
 
@@ -341,6 +363,8 @@ if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
   console.log('No one wins the trophy 😭');
 }
 
+////////////////////////////////////
+// The switch Statement
 const day = 'friday';
 
 switch (day) {
@@ -366,7 +390,6 @@ switch (day) {
     console.log('Not a valid day!');
 }
 
-
 if (day === 'monday') {
   console.log('Plan course structure');
   console.log('Go to coding meetup');
@@ -382,31 +405,53 @@ if (day === 'monday') {
   console.log('Not a valid day!');
 }
 
-
+////////////////////////////////////
+// Statements and Expressions
 3 + 4
 1991
 true && false && !false
 
-if (23 > 10){
-    const str = '23 is bigger';
+if (23 > 10) {
+  const str = '23 is bigger';
 }
-console.log(`I'm ${2037 - 1991} years old.`);
 
+const me = 'Jonas';
+console.log(`I'm ${2037 - 1991} years old ${me}`);
 
-
+////////////////////////////////////
 // The Conditional (Ternary) Operator
-const agee = 23;
+const age = 23;
 // age >= 18 ? console.log('I like to drink wine 🍷') : console.log('I like to drink water 💧');
 
-const drink = agee >= 18 ? 'wine 🍷' : 'water 💧';
+const drink = age >= 18 ? 'wine 🍷' : 'water 💧';
 console.log(drink);
 
 let drink2;
-if (agee >= 18) {
+if (age >= 18) {
   drink2 = 'wine';
 } else {
   drink2 = 'water';
 }
 console.log(drink2);
 
-console.log(`I like to drink ${agee >= 18 ? 'wine 🍷' : 'water 💧'}`);
+console.log(`I like to drink ${age >= 18 ? 'wine 🍷' : 'water 💧'}`);
+
+
+////////////////////////////////////
+// Coding Challenge #4
+/*
+Steven wants to build a very simple tip calculator for whenever he goes eating in a resturant. In his country, it's usual to tip 15% if the bill value is between 50 and 300. If the value is different, the tip is 20%.
+
+1. Your task is to caluclate the tip, depending on the bill value. Create a variable called 'tip' for this. It's not allowed to use an if/else statement 😅 (If it's easier for you, you can start with an if/else statement, and then try to convert it to a ternary operator!)
+2. Print a string to the console containing the bill value, the tip, and the final value (bill + tip). Example: 'The bill was 275, the tip was 41.25, and the total value 316.25'
+
+TEST DATA: Test for bill values 275, 40 and 430
+
+HINT: To calculate 20% of a value, simply multiply it by 20/100 = 0.2
+HINT: Value X is between 50 and 300, if it's >= 50 && <= 300 😉
+*/
+
+
+const bill = 430;
+const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
