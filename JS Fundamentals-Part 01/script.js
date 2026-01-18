@@ -158,3 +158,23 @@ console.log('String with \n\
 console.log(`String
     multiple
     lines`);
+
+
+const aage = 19;
+
+if (aage >= 18){
+    console.log("Sarah can start driving license");
+} else{
+    const yearsLeft = 18 - age;
+    console.log(`Sarah is too young. Wait another ${yearsLeft} years :)`); 
+}
+
+const birthYear4 = 1998;
+
+let century;
+if(birthYear4 <= 2000) {
+    let century = 20;
+} else {
+    let century = 21;
+}
+console.log(century);
