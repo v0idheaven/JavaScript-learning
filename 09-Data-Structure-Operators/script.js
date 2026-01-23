@@ -36,6 +36,18 @@ const restaurant = {
   },
 };
 
+const arrr = [7, 8, 9];
+const badNewArr = [1, 2, arrr[0], arrr[1], arrr[2]];
+console.log(badNewArr);
+
+const newArr = [1, 2, ...arrr];
+console.log(newArr);
+
+console.log(...newArr);
+console.log(1, 2, 7, 8, 9);
+
+/////////////////////////////////
+// Destructuring objects
 restaurant.orderDelivery({
   time: "22:30",
   address: "Via del Sole, 21",
