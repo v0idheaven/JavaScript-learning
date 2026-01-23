@@ -61,7 +61,19 @@ const str = "Jonas";
 const letters = [...str, "", "S."];
 console.log(letters);
 console.log(...str);
+// console.log(`${...str} Schmedtmann`);
 
+const ingredients = [
+  prompt("Let's make pasta! Ingredient 1?"),
+  prompt("Ingredient 2?"),
+  prompt("Ingredient 3?"),
+];
+console.log(ingredients);
+
+restaurant.orderPasta(...ingredients);
+// Objects
+const newRestaurant = { foundedIn: 1998, ...restaurant, founder: "Guiseppe" };
+console.log(newRestaurant);
 
 /////////////////////////////////
 // Destructuring objects
