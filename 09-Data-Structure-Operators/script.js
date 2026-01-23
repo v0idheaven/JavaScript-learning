@@ -75,6 +75,8 @@ restaurant.orderPasta(...ingredients);
 const newRestaurant = { foundedIn: 1998, ...restaurant, founder: "Guiseppe" };
 console.log(newRestaurant);
 
+efw
+
 /////////////////////////////////
 // Destructuring objects
 restaurant.orderDelivery({
