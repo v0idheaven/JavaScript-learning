@@ -43,6 +43,23 @@ const restaurant = {
     console.log(otherIngredients);
   },
 };
+const rest1 = {
+  name: "Capri",
+  numGuests: 20,
+};
+const rest2 = {
+  name: "La Piazza",
+  owner: "Giovanni Rossi",
+};
+
+rest1.numberGuests = rest2.numGuests || 10;
+console.log(rest1.numberGuests);
+rest2.numberGuests = rest2.numGuests || 10;
+console.log(rest2.numberGuests);
+
+
+//////////////////////////////////
+// The Nullish Coalescing Operator
 
 // restaurant.numGuests = 0;
 const guestss = restaurant.numGuests || 10;
