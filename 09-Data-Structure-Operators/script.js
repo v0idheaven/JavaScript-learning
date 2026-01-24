@@ -72,7 +72,7 @@ TEST DATA FOR 6: Use players 'Davies', 'Muller', 'Lewandowski' and 'Kimmich'. Th
 
 GOOD LUCK 😀
 */
-
+/*
 // 1.
 const [players1, players2] = game.players;
 console.log(players1, players2);
@@ -107,6 +107,7 @@ printGoals(...game.scored);
 // 7.
 team1 < team2 && console.log('Team 1 is more likely to win');
 team1 > team2 && console.log('Team 2 is more likely to win');
+*/
 
 ///////////////////////////////////////// Logical Assignment Operators
 rest1.numberGuests = rest2.numGuests || 10;
