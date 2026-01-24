@@ -44,6 +44,21 @@ const restaurant = {
   },
 };
 
+// restaurant.numGuests = 0;
+const guestss = restaurant.numGuests || 10;
+console.log(guestss);
+
+// Nullish: null and undefined (NOT 0 or '')
+const guestsCorrect = restaurant.numGuests ?? 10;
+console.log(guestsCorrect);
+
+
+//////////////////////////////////
+// Short Circuiting (&& and ||)
+
+// Use ANY data type, return ANY data type, short-circuiting
+console.log('---- OR ----');
+// Use ANY data type, return ANY data type, short-circuiting
 console.log(33 || 'Jonas');
 console.log('' && 'Jonas');
 console.log(true && 0);
