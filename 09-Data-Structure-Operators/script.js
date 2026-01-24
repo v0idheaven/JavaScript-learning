@@ -75,7 +75,10 @@ restaurant.orderPasta(...ingredients);
 const newRestaurant = { foundedIn: 1998, ...restaurant, founder: "Guiseppe" };
 console.log(newRestaurant);
 
-efw
+const restaurantCopy = { ...restaurant };
+restaurantCopy.name = "Ristorante Roma";
+console.log(restaurant.name);
+console.log(restaurantCopy.name);
 
 /////////////////////////////////
 // Destructuring objects
