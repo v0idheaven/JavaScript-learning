@@ -62,6 +62,13 @@ console.log(restaurant.openingHourss.mon.open)
 console.log(restaurant.openingHourss.mon?.open);
 console.log(restaurant.openingHourss?.mon?.open);
 
+// Example
+const days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+for (const day of days) {
+  const open = restaurant.openingHourss[day]?.open ?? "closed";
+  console.log(`On ${day}, we open at ${open}`);
+}
+
 
 ///////////////////////////////////////////
 // The for-of Loop
