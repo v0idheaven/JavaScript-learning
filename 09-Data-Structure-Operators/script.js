@@ -55,6 +55,16 @@ const rest2 = {
   owner: "Giovanni Rossi",
 };
 
+if (restaurant.openingHourss && restaurant.openingHourss.mon)
+console.log(restaurant.openingHourss.mon.open)
+
+// With Optional Chaining
+console.log(restaurant.openingHourss.mon?.open);
+console.log(restaurant.openingHourss?.mon?.open);
+
+
+///////////////////////////////////////////
+// The for-of Loop
 const mmenu = [...restaurant.starterMenu, ...restaurant.mainMenu];
 
 for (const item of mmenu) console.log(item);
