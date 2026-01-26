@@ -78,7 +78,7 @@ BONUS: Create an object called 'scorers' which contains the names of the players
 
 GOOD LUCK 😀
 */
-
+/*
 const gamee = {
   team1: 'Bayern Munich',
   team2: 'Borrussia Dortmund',
@@ -146,7 +146,7 @@ const scorers = {};
 for (const player of game.scored) {
   scorers[player] ? scorers[player]++ : (scorers[player] = 1);
 }
-
+*/
 
 ////////////////////////////////////////////
 // Looping Objects: Object Keys, Values, and Entries
