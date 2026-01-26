@@ -55,6 +55,35 @@ const rest2 = {
   owner: "Giovanni Rossi",
 };
 
+
+// Property NAMES
+const properties = Object.keys(openingHourss);
+console.log(properties);
+
+let openStr = `We are open on ${properties.length} days: `;
+for (const day of properties) {
+  openStr += `${day}, `;
+}
+console.log(openStr);
+
+// Property VALUES
+const values = Object.values(openingHourss);
+console.log(values);
+
+// Entire Object
+const entries = Object.entries(openingHourss);
+// console.log(entries);
+
+// [key, value]
+for (const [day, { open, close }] of entries) {
+  console.log(`On ${day} we open at ${open} and close at ${close}`);
+}
+
+
+///////////////////////////////////////////
+// Optional Chaining (?.)
+
+// console.log(restaurant.openingHours.mon.open);
 if (restaurant.openingHourss && restaurant.openingHourss.mon)
 console.log(restaurant.openingHourss.mon.open)
 
