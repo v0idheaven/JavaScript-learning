@@ -55,6 +55,19 @@ const rest2 = {
   owner: "Giovanni Rossi",
 };
 
+const orderSet = new Set([
+  "Pasta",
+  "Pizza",
+  "Pizza",
+  "Risotto",
+  "Pasta",
+  "Pizza",
+]);
+console.log(orderSet);
+console.log(new Set("Jonas"));
+console.log(orderSet.size);
+
+
 ///////////////////////////////////////
 // Coding Challenge #2
 
