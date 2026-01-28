@@ -55,6 +55,10 @@ const rest2 = {
   owner: "Giovanni Rossi",
 };
 
+
+////////////////////////////////////////
+// Sets
+
 const orderSet = new Set([
   "Pasta",
   "Pizza",
@@ -66,6 +70,16 @@ const orderSet = new Set([
 console.log(orderSet);
 console.log(new Set("Jonas"));
 console.log(orderSet.size);
+console.log(orderSet.has("Pizza"));
+console.log(orderSet.has("Bread"));
+orderSet.add("Garlic Bread");
+orderSet.add("Garlic Bread");
+orderSet.delete("Risotto");
+// orderSet.clear();
+console.log(orderSet);
+
+for (const order of orderSet) console.log(order); 
+
 
 
 ///////////////////////////////////////
